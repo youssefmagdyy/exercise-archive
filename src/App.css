@@ -10,7 +10,7 @@ a{
 }
 
 a:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 
@@ -29,10 +29,10 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30vh;
 }
 
 .home a {
+    margin-top: 8vh;
     text-transform: uppercase;
     font-size: 2.5rem;
 }
@@ -40,5 +40,18 @@ a:hover {
 {
     .home a {
         text-align: center;
+        margin-top: 30vh;
+    }
+}
+
+.home img {
+    width: 255.5px;
+    height: 333.5px;
+}
+
+@media (max-width: 325px) 
+{
+    .home img {
+       display: none;
     }
 }

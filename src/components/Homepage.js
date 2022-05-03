@@ -11,9 +11,11 @@ const Homepage = () => {
             </a>
         </nav>
     <div className='home'>
+    <img src='man.png' alt='athletic man'/>
         <Link to="/body">
             Enter Archive
         </Link>
+       
     </div>
     </div>
   )
