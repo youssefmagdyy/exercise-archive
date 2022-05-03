@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+   }
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.home a {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.home a:hover {
+    transform: scale(1.02);
+}
+

@@ -2,11 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
-import router from "./routes/posts.js";
 
 const app = express();
 
-app.use('/posts',router);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
