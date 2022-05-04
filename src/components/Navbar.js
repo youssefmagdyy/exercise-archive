@@ -1,20 +1,16 @@
 import React from 'react'
-import { FiGithub } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  let location = useLocation();
   return (
-    <div className='navbar'>
-      <Link to='/' className='nav a'>Homepage</Link>
-    <nav className='navbar'>
+    <div className={`${location.pathname==='/'?'navbar-home':'navbar'}`}>
+      {(location.pathname!=='/')&&<Link to='/'>Homepage</Link>}
+    <nav>
     <a style={{marginRight:'0px'}} href='https://github.com/youssefmagdyy/exercise-archive/'>
-    <span>Contribute</span>
-        {/* <FiGithub /> */}
+    <span>Github Repo</span>
+       {/* icon */}
     </a>
-    {/* <a href='https://github.com/youssefmagdyy/exercise-archive/'>
-    <span>Contribute</span>
-        <FiGithub  size={'2rem'}/>
-    </a> */}
 </nav>
 </div>
   )

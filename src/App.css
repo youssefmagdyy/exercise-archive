@@ -33,8 +33,15 @@ a:hover {
     justify-content: space-between;
 }
 
+.navbar-home{
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row-reverse;
+}
+
+
 .navbar a {
-    margin-left: 45px;
+    margin-left: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,23 +63,6 @@ nav a {
 nav span {
     margin-right: 5px;
 }
-
-.un {
-    display: inline-block;
-  }
-  
-  .un::after {
-    content: '';
-    width: 0px;
-    height: 1px;
-    display: block;
-    background: black;
-    transition: 300ms;
-  }
-  
-  .un:hover::after {
-    width: 100%;
-  }
 
 .home {
     display: flex;
@@ -96,8 +86,8 @@ nav span {
 
 .home img {
     margin-top: 10vh;
-    width: 255.5px;
-    height: 333.5px;
+    width: 254.4px;
+    height: 360px;
 }
 
 @media (max-width: 325px) 
@@ -134,6 +124,7 @@ nav span {
 
 @media(max-width: 1025px){
     .list{
+        margin-top: 8vh;
         grid-template-columns: 1fr 1fr;
     }
     .all input {
@@ -143,6 +134,7 @@ nav span {
 
 @media(max-width: 675px){
     .list{
+        margin-top: 8vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
