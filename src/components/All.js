@@ -8,6 +8,9 @@ const All = () => {
         </input>
         <div className='list'>
             <Exercise/>
+            <Exercise/>
+            <Exercise/>
+            <Exercise/>
         </div>
     </main>
   )

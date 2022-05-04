@@ -5,7 +5,7 @@ const Homepage = () => {
   return (
     <main className='home'>
     <img src='man.png' alt='athletic man'/>
-        <Link to="/all">
+        <Link className='un' to="/all">
             Enter Archive
         </Link>
     </main>
