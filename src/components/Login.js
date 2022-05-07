@@ -6,9 +6,9 @@ const Login = () => {
     <main className='login'>
         <div className='box'>
             <span>Email</span>
-            <input type='text'></input>
+            <input type='email'></input>
             <span>Password</span>
-            <input type='text'></input>
+            <input type='password'></input>
             <button type='submit'> Login</button>
          
         </div>

@@ -26,6 +26,7 @@ button:active {
 a{
     text-decoration: none;
     font-size: 1.2rem;
+  
     color: black;
 }
 
@@ -33,14 +34,17 @@ a:hover {
     transform: scale(1.01);
 }
 
+
 .navbar-home{
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     flex-direction: row-reverse;
+
 }
 
 .navbar-home a{
    margin-right: 40px;
+   
 }
 
 
@@ -85,26 +89,13 @@ nav span {
     font-size: 1.8rem;
 }
 
-@media (max-width: 325px) 
-{
-    .home a {
-        text-align: center;
-        margin-top: 30vh;
-    }
-}
 
 .home img {
-    margin-top: 10vh;
+    margin-top: 13vh;
     width: 254.4px;
     height: 360px;
 }
 
-@media (max-width: 325px) 
-{
-    .home img {
-       display: none;
-    }
-}
 
 .exercises {
     margin-top: 5vh;
@@ -123,7 +114,7 @@ nav span {
 }
 
 .list {
-    margin-top: 10vh;
+    margin-top: 2vh;
     width: 90%;
     display: grid;
     gap: 5rem 2rem;
@@ -131,51 +122,22 @@ nav span {
     justify-items: center;
 }
 
-@media(max-width: 1025px){
-    .list{
-        margin-top: 8vh;
-        grid-template-columns: 1fr 1fr;
-    }
-    .exercises input {
-        width: 70%;
-    }
-}
 
-@media(max-width: 675px){
-    .list{
-        margin-top: 8vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .exercises input {
-        width: 70%;
-    }
-}
 
 .list .item {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    /* background-color: black; */
     justify-content: center;
     align-items: center;
-    /* border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border: 5px solid rgb(212, 212, 212);
-    border-top: 0px; */
-   
+  
 }
 
 .list .item button {
-    width: 100%;
-    border-radius: 25px;
-    border: 1.5px solid black;
-    border-bottom: 0px;
+    width: 50%;
+    border: none;
     padding: 5px 0px;
-    margin: 35px 0px 0px 0px;
+    margin: 35px 0px 3px 0px;
     background-color: white;
 }
 
@@ -213,14 +175,14 @@ nav span {
 
 .page-turn{
     width: 15%;
-    margin: 5vh 0px;
+    margin: 8vh 0px;
     display: flex;
     justify-content: space-between;
 }
 
 .page-turn-one{
     width: 15%;
-    margin: 5vh 0px;
+    margin: 8vh 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,8 +192,8 @@ nav span {
     background-color: Transparent;
     background-repeat:no-repeat;
     border: 1.5px solid;
-    border-radius: 5px;
-    padding: 1px 5px;
+    border-radius: 25px;
+    padding: 5px 10px;
 }
 
 .login {
@@ -266,7 +228,7 @@ nav span {
 }
 
 .box input {
-    border-radius: 15px;
+    border-radius: 25px;
     border: 1.5px solid black;
     padding: 10px;
     margin: 10px;
@@ -300,5 +262,45 @@ nav span {
 }
 
 .saved h1 {
+    font-size: 1.8rem;
     margin-top: 5vh;
+}
+
+/*//////// Media //////////////*/
+
+@media (max-width: 325px) 
+{
+    .home a {
+        text-align: center;
+        margin-top: 30vh;
+    }
+    .home img {
+        display: none;
+     }
+}
+
+@media(max-width: 1025px){
+    .list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box button {
+        padding: 5px 5px;
+        width: fit-content;
+       
+    }
+}
+
+@media(max-width: 675px){
+    .list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    *{
+        font-size: small;
+    }
+
 }

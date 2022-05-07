@@ -11,7 +11,7 @@ const Navbar = () => {
     <span> Login</span>
        {/* icon */}
     </Link>
-    <Link to='/saved'>
+    <Link to='/saved/1'>
     <span> Saved</span>
        {/* icon */}
     </Link>
