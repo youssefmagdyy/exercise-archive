@@ -1,13 +1,13 @@
 import React from 'react'
 
 
-const Exercise = () => {
+const Exercise = ({width,height}) => {
   return (
     <article className='item'>
       <button className='button'>
             Unsave or Save
         </button>
-      <iframe width="277" height="491" src="" title="YouTube video player" 
+      <iframe width={width} height={height} src="" title="YouTube video player" 
       frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowFullScreen>
       </iframe>

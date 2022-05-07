@@ -15,10 +15,6 @@ const Navbar = () => {
     <span> Saved</span>
        {/* icon */}
     </Link>
-    <Link to='/'>
-    <span> Logout</span>
-       {/* icon */}
-    </Link>
 </nav>
 </div>
   )

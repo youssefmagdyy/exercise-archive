@@ -54,7 +54,7 @@ a:hover {
 }
 
 .navbar a {
-    margin-left: 25px;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,14 +174,12 @@ nav span {
 }
 
 .page-turn{
-    width: 15%;
     margin: 8vh 0px;
     display: flex;
     justify-content: space-between;
 }
 
 .page-turn-one{
-    width: 15%;
     margin: 8vh 0px;
     display: flex;
     justify-content: center;
@@ -189,6 +187,7 @@ nav span {
 }
 
 .page-btn{
+    margin: 0px 5px;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: 1.5px solid;
@@ -221,9 +220,9 @@ nav span {
     border: 1.5px solid black;
     padding: 5px 0px;
     margin: 35px 0px 0px 0px;
-    margin-left: 35%;
+    margin-left: 30%;
     font-size: 1.5rem;
-    width: 25%;
+    width: 35%;
     background-color: white;
 }
 
@@ -233,13 +232,13 @@ nav span {
     padding: 10px;
     margin: 10px;
     font-size: 1rem;
-    width: 50%;
+    width: 75%;
 }
 
 .box span {
     font-size: 1.7rem;
     align-self: start;
-    margin-left: 22%;
+    margin-left: 10%;
 }
 
 .login .signup-text {
@@ -261,10 +260,6 @@ nav span {
     align-items: center;
 }
 
-.saved h1 {
-    font-size: 1.8rem;
-    margin-top: 5vh;
-}
 
 /*//////// Media //////////////*/
 
@@ -284,8 +279,12 @@ nav span {
         grid-template-columns: 1fr 1fr;
     }
 
+    .box {
+        width: 70%;
+    }
+
     .box button {
-        padding: 5px 5px;
+        padding: 5px 25px;
         width: fit-content;
        
     }
