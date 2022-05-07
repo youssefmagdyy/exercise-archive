@@ -7,10 +7,18 @@ const Navbar = () => {
     <div className={`${location.pathname==='/'?'navbar-home':'navbar'}`}>
       {(location.pathname!=='/')&&<Link to='/'>Homepage</Link>}
     <nav>
-    <a style={{marginRight:'0px'}} href='https://github.com/youssefmagdyy/exercise-archive/'>
-    <span>Github Repo</span>
+    <Link style={{marginRight:'0px'}} to='/login'>
+    <span> Login</span>
        {/* icon */}
-    </a>
+    </Link>
+    <Link to='/saved'>
+    <span> Saved</span>
+       {/* icon */}
+    </Link>
+    <Link to='/'>
+    <span> Logout</span>
+       {/* icon */}
+    </Link>
 </nav>
 </div>
   )

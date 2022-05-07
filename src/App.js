@@ -4,7 +4,10 @@ import Error from './components/Error';
 import Homepage from './components/Homepage';
 import './App.css'
 import Navbar from './components/Navbar';
-import All from './components/All';
+import Exercises from './components/Exercises';
+import Login from './components/Login';
+import Register from './components/Register';
+import Saved from './components/Saved';
 
 const App = () => {
   return (
@@ -12,7 +15,10 @@ const App = () => {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/all" element={<All />} />
+      <Route path="/exercises/:pagenumber" element={<Exercises />} />
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/saved" element={<Saved/>}/>
       <Route path="*" element={<Error />} />
     </Routes>
   </BrowserRouter>

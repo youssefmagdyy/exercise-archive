@@ -9,15 +9,20 @@
 main {
     padding-bottom: 30px;
 }
-footer{
-    padding: 20px;
-}
 
 iframe {
     border-radius: 15px;
     border: 1.5px solid black;
    
 }
+
+button:hover{
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.98);
+}
+
 a{
     text-decoration: none;
     font-size: 1.2rem;
@@ -28,17 +33,21 @@ a:hover {
     transform: scale(1.01);
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
 .navbar-home{
     display: flex;
     justify-content: stretch;
     flex-direction: row-reverse;
 }
 
+.navbar-home a{
+   margin-right: 40px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
 
 .navbar a {
     margin-left: 25px;
@@ -97,7 +106,7 @@ nav span {
     }
 }
 
-.all {
+.exercises {
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
@@ -105,7 +114,7 @@ nav span {
     align-items: center;
 }
 
-.all input {
+.exercises input {
     border-radius: 25px;
     border: 1.5px solid black;
     padding: 10px;
@@ -127,7 +136,7 @@ nav span {
         margin-top: 8vh;
         grid-template-columns: 1fr 1fr;
     }
-    .all input {
+    .exercises input {
         width: 70%;
     }
 }
@@ -141,7 +150,7 @@ nav span {
         align-items: center;
     }
 
-    .all input {
+    .exercises input {
         width: 70%;
     }
 }
@@ -158,6 +167,16 @@ nav span {
     border: 5px solid rgb(212, 212, 212);
     border-top: 0px; */
    
+}
+
+.list .item button {
+    width: 100%;
+    border-radius: 25px;
+    border: 1.5px solid black;
+    border-bottom: 0px;
+    padding: 5px 0px;
+    margin: 35px 0px 0px 0px;
+    background-color: white;
 }
 
 .list .item-text{
@@ -190,4 +209,96 @@ nav span {
     flex-wrap: wrap;
     width: 70%;
     justify-content: space-around;
+}
+
+.page-turn{
+    width: 15%;
+    margin: 5vh 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-turn-one{
+    width: 15%;
+    margin: 5vh 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-btn{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1.5px solid;
+    border-radius: 5px;
+    padding: 1px 5px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: 40%;
+    border: 1.5px solid;
+    border-radius: 15px;
+    padding: 45px 0px;
+}
+
+.box button {
+    align-self: start;
+    border-radius: 25px;
+    border: 1.5px solid black;
+    padding: 5px 0px;
+    margin: 35px 0px 0px 0px;
+    margin-left: 35%;
+    font-size: 1.5rem;
+    width: 25%;
+    background-color: white;
+}
+
+.box input {
+    border-radius: 15px;
+    border: 1.5px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.box span {
+    font-size: 1.7rem;
+    align-self: start;
+    margin-left: 22%;
+}
+
+.login .signup-text {
+    margin-top: 10px;
+}
+
+.login .signup-text a {
+   font-size: 1.1rem;
+}
+
+.login .signup-text a:hover {
+   text-decoration: underline;
+}
+
+.saved {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saved h1 {
+    margin-top: 5vh;
 }
