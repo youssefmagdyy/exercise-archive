@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Error from './components/Error';
 import Homepage from './components/Homepage';
-import './App.css'
+import './App.scss'
 import Navbar from './components/Navbar';
 import Exercises from './components/Exercises';
 import Login from './components/Login';

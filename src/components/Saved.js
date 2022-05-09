@@ -13,8 +13,8 @@ const Saved = () => {
             Username's Saved
         </h1>
         <div className='list'>
-        <Exercise width={'207'} height={'368'}/>
-        <Exercise width={'207'} height={'368'}/>
+        {/* <Exercise width={'207'} height={'368'}/>
+        <Exercise width={'207'} height={'368'}/> */}
         </div>
         <div className={`${(location.pathname === '/saved/1')? 'page-turn-one':'page-turn'}`}>
           {(pagenumber !== 1)&&<button className='page-btn' type='button' onClick={()=>{navigate(`/saved/${pagenumber-1}`)}}>Prev page</button>}
