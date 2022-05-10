@@ -1,21 +1,23 @@
 import React from 'react'
 
 
-const Exercise = ({width,height}) => {
+const Exercise = ({width,height,link,name,author,tags}) => {
   return (
     <article className='item'>
       <button className='button'>
             Unsave or Save
         </button>
-      <iframe width={width} height={height} src="" title="YouTube video player" 
+      <iframe width={width} height={height} src={link} title={name}
       frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowFullScreen>
       </iframe>
      <div className='item-text'>
-       <h1>Exercise Name</h1>
-       <h3>By Author</h3>
+       <h1>{name}</h1>
+       <h3>{author}</h3>
        <div className='tags'>
-       <span>tag2</span><span>tag2</span><span>tag2</span> <span>tag3</span>
+         {tags.map((t,index)=>{
+           return <span key={index}>{t}</span>
+           })}
        </div>
      </div>
     </article>
