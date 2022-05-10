@@ -6,7 +6,7 @@ const initialState = {
     exercises:[]
 };
 
-const url = 'http://localhost:5000/exercises';
+const url = 'https://exercise-archive-api.herokuapp.com/exercises';
 
 const ExercisesContext = React.createContext();
 
