@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cors());
 
+app.get('/',(req,res)=>{res.send('API')})
 app.use('/exercises',exercisesRoutes)
 
 const CONNECTION_URL = process.env.CONNECTION_URL;
